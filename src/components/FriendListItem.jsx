@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import styleFriendItem from '../styles/FriendListItem.css'
+import '../styles/FriendListItem.css'
 
 function FriendListItem({ avatar, name, isOnline }) {
     
-  const activeClass = isOnline ? styleFriendItem.active : styleFriendItem.offline;
+  const activeClass = isOnline ? 'active' : 'offline';
     
     return (
       <li className='itemFriend'>
